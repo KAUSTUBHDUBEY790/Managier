@@ -59,6 +59,12 @@ function Projectform({show,setShow,reloadData,project}) {
         <Form.Item label="Project Description" name="description">
           <TextArea placeholder="Project Description"/>
         </Form.Item>
+        <Form.Item label="Status" name="status" initialValue="active">
+      <Radio.Group>
+        <Radio value="active">Active</Radio>
+        <Radio value="inactive">Inactive</Radio>
+      </Radio.Group>
+    </Form.Item>
       </Form>
     </Modal>
   )
